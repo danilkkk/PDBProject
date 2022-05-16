@@ -13,19 +13,19 @@ namespace PDBProject1
 
         private List<ISubscriber> subscribers = new List<ISubscriber>();
 
-        public void Subscribe(ISubscriber observer)
+        public void Subscribe(ISubscriber subscriber)
         {
-            subscribers.Add(observer);
+            subscribers.Add(subscriber);
         }
-        public void Unsubscribe(ISubscriber observer)
+        public void Unsubscribe(ISubscriber subscriber)
         {
-            subscribers.Remove(observer);
+            subscribers.Remove(subscriber);
         }
         public void Notify()
         {
-            foreach (var observer in subscribers)
+            foreach (var subscriber in subscribers)
             {
-                observer.Update(this);
+                subscriber.Update(this);
             }
         }
         public void SendMessagesWithDelay(string message, int delay)

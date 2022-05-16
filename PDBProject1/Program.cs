@@ -44,7 +44,7 @@ namespace PDBProject1
                 switch (char.ToLower(Console.ReadKey(true).KeyChar))
                 {
                     case '1':
-                        ChoseType(ref matrix);
+                        ChoseType(matrix);
                         break;
 
                     case '2':
@@ -72,7 +72,7 @@ namespace PDBProject1
 
         }
 
-        static void ChoseType(ref Matrix mat)
+        static void ChoseType(Matrix mat)
         {
 
             Console.Clear();
