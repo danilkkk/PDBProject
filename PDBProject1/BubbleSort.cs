@@ -8,7 +8,7 @@ namespace PDBProject1
 {
     public class BubleSort : IAlgorythm
     {
-        public void SortMatrix(ref int[][] arr, SortingType sort)
+        public void SortMatrix(int[][] arr, SortingType sort)
         {
             for (int i = 0; i < arr.Length; i++)
             {

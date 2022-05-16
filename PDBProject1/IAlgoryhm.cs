@@ -8,6 +8,6 @@ namespace PDBProject1
 {
     public interface IAlgorythm
     {
-        void SortMatrix(ref int[][] arr, SortingType asc);
+        void SortMatrix(int[][] arr, SortingType type);
     }
 }
