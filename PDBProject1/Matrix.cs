@@ -8,7 +8,7 @@ namespace PDBProject1
 {
     public delegate bool SortingType(int[] a, int[] b);
 
-    public delegate void Sort(ref int[][] arr, SortingType sortingType);
+    public delegate void Sort(int[][] arr, SortingType sortingType);
 
     public class Matrix
     {
@@ -52,7 +52,7 @@ namespace PDBProject1
                 return;
             }
 
-            SortingAlgorythm(ref matrix, SortingAlgorythmType);
+            SortingAlgorythm(matrix, SortingAlgorythmType);
         }
 
         public void Show()
